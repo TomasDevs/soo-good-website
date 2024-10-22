@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soo good</title>
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;900&display=swap"
+      rel="stylesheet" />
+
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-website mx-sm-4">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="icon-meat" viewBox="0 0 75 75">
+        <circle
+          cx="37.5"
+          cy="37.5"
+          r="33.5"
+          style="
+            fill: none;
+            stroke: white;
+            stroke-width: 2px;
+            border-radius: 50%;
+          " />
+        <g transform="translate(12, 12) scale(2.1)">
+          <path
+            id="primary"
+            d="M14,3A6,6,0,0,0,8,8.31a8.49,8.49,0,0,1-.85,3.28,16.92,16.92,0,0,1-2,2.55A4.07,4.07,0,0,0,4,17a4,4,0,0,0,4,4c4.58,0,12-5.08,12-12A6,6,0,0,0,14,3Zm0,8a2,2,0,1,1,2-2A2,2,0,0,1,14,11Z"
+            style="fill: white"></path>
+        </g>
+      </symbol>
+
+      <symbol id="icon-protein" viewBox="0 0 75 75">
+        <circle
+          cx="37.5"
+          cy="37.5"
+          r="33.5"
+          style="fill: none; stroke: white; stroke-width: 2px" />
+        <g transform="translate(20, 20) scale(0.04)" style="fill: white">
+          <path
+            d="M59.7,336.3V796.4c0,24.899,20.1,45,45,45h632c24.9,0,45-20.101,45-45V336.3c0-13.899-6.4-27-17.4-35.5 c-27.199-21.2-76.899-66.7-76.899-116.3H420.7H154c0,49.6-49.7,95.1-76.9,116.3C66.1,309.3,59.7,322.4,59.7,336.3z M299,508.1 L435.8,304.7c8.301-12.3,27.4-6.4,27.4,8.399v195h66.6c12,0,19.101,13.4,12.4,23.4L405.5,734.8c-8.3,12.3-27.399,6.4-27.399-8.399 v-195H311.5C299.5,531.4,292.3,518,299,508.1z"></path>
+          <path
+            d="M144.7,144h552c22.6,0,41-18.4,41-41V41c0-22.6-18.4-41-41-41h-552c-22.6,0-41,18.4-41,41v62 C103.7,125.7,122.1,144,144.7,144z"></path>
+        </g>
+      </symbol>
+
+      <symbol id="icon-vitamins" viewBox="0 0 75 75">
+        <circle
+          cx="37.5"
+          cy="37.5"
+          r="33.5"
+          style="fill: none; stroke: white; stroke-width: 2px" />
+        <g transform="translate(16, 16) scale(0.09)" style="fill: white">
+          <path
+            d="M453.869,206.053L209.656,46.232c-9.209-6.026-21.561-3.446-27.587,5.763l-57.379,87.679 c-0.1-2.053-1.13-4.032-2.98-5.243l-23.622-15.459c-3.069-2.008-7.186-1.148-9.194,1.921l-33.829,51.69 c-2.008,3.069-1.147,7.187,1.921,9.195l23.623,15.459c3.068,2.009,7.187,1.149,9.194-1.921l0.5-0.762l7.411,70.808 c0.208,1.986,1.298,3.774,2.969,4.867l217.877,142.585c3.068,2.009,7.186,1.149,9.195-1.921l128.035-195.645 C457.799,212.179,456.939,208.062,453.869,206.053z M169.921,143.338l34.584-52.846l76.722,50.209L169.921,143.338z"></path>
+          <path
+            d="M41.154,233.301c-0.945-1.016-2.712-1.016-3.657,0C35.966,234.943,0,273.767,0,294.847 c0,21.684,17.641,39.324,39.325,39.324c21.684,0,39.325-17.641,39.325-39.324C78.651,273.767,42.686,234.943,41.154,233.301z"></path>
+        </g>
+      </symbol>
+
+      <symbol id="icon-plant" viewBox="0 0 75 75">
+        <circle
+          cx="37.5"
+          cy="37.5"
+          r="33.5"
+          style="fill: none; stroke: white; stroke-width: 2px" />
+        <g transform="translate(19, 19) scale(1.6)" style="fill: white">
+          <path fill="none" d="M0 0H24V24H0z"></path>
+          <path
+            d="M21 3v2c0 3.866-3.134 7-7 7h-1v1h5v7c0 1.105-.895 2-2 2H8c-1.105 0-2-.895-2-2v-7h5v-3c0-3.866 3.134-7 7-7h3zM5.5 2c2.529 0 4.765 1.251 6.124 3.169C10.604 6.51 10 8.185 10 10v1h-.5C5.358 11 2 7.642 2 3.5V2h3.5z"></path>
+        </g>
+      </symbol>
+
+      <symbol id="icon-flower" viewBox="0 0 75 75">
+        <circle
+          cx="37.5"
+          cy="37.5"
+          r="33.5"
+          style="fill: none; stroke: white; stroke-width: 2px" />
+        <g transform="translate(19, 19) scale(0.65)" style="fill: white">
+          <path
+            style="fill: #fff"
+            d="M50.741,9.158c0-1.945-0.275-3.821-0.744-5.619c-0.056,0-0.11-0.008-0.166-0.008c-4.891,0-9.402,1.591-13.07,4.269C36.51,3.451,32.915,0,28.505,0s-8.005,3.451-8.255,7.799C16.581,5.121,12.07,3.53,7.179,3.53c-0.056,0-0.11,0.008-0.166,0.008C6.543,5.337,6.268,7.213,6.268,9.158c0,11.435,8.633,20.845,19.737,22.088v5.178c-2.011-2.169-4.879-3.53-8.07-3.53c-0.028,0-0.055,0.004-0.082,0.004c-0.232,0.891-0.369,1.821-0.369,2.785c0,5.226,3.641,9.591,8.521,10.724v8.103c0,1.381,1.119,2.5,2.5,2.5s2.5-1.119,2.5-2.5v-8.103c4.88-1.133,8.521-5.498,8.521-10.724c0-0.964-0.136-1.894-0.369-2.785c-0.028,0-0.055-0.004-0.082-0.004c-3.191,0-6.059,1.361-8.07,3.53v-5.177C42.108,30.003,50.741,20.593,50.741,9.158z"></path>
+        </g>
+      </symbol>
+
+      <symbol id="icon-bottle" viewBox="0 0 75 75">
+        <circle
+          cx="37.5"
+          cy="37.5"
+          r="33.5"
+          style="fill: none; stroke: white; stroke-width: 2px" />
+        <g transform="translate(19, 19) scale(1.5)" style="fill: white">
+          <rect
+            height="2.95"
+            transform="translate(-5.07 12.25) rotate(-45)"
+            width="10.49"
+            x="7.01"
+            y="10.78" />
+          <rect
+            height="5.66"
+            transform="translate(-6.92 16.71) rotate(-45)"
+            width="10.49"
+            x="11.46"
+            y="13.88" />
+          <path
+            d="M7.44,4,5,1.59,1.59,5,4,7.43a5.11,5.11,0,0,0,1.27,5.27l.79.79L13.5,6.09l-.79-.79A5.23,5.23,0,0,0,7.44,4ZM5.29,5.29c-.1.1-.17.22-.26.32L4.41,5,5,4.41,5.62,5C5.51,5.12,5.39,5.19,5.29,5.29Z" />
+        </g>
+      </symbol>
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="icon-facebook" fill="#504D53" viewBox="0 0 24 24">
+        <g>
+          <style type="text/css">
+            .st0 {
+              fill: none;
+            }
+          </style>
+          <path
+            d="M20,2H4C2.9,2,2,2.9,2,4v16c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V4C22,2.9,21.1,2,20,2z M18.4,7.4H17c-0.9,0-1,0.3-1,1v1.3 h2.1L18,12h-1.9v7h-3.2v-7h-1.2V9.6h1.2V8.1c0-2,0.8-3.1,3.1-3.1h2.4V7.4z"></path>
+          <rect class="st0" width="30" height="30"></rect>
+        </g>
+      </symbol>
+
+      <symbol id="icon-instagram" fill="#504D53" viewBox="-143 145 512 512">
+        <g>
+          <path
+            d="M113,446c24.8,0,45.1-20.2,45.1-45.1c0-9.8-3.2-18.9-8.5-26.3c-8.2-11.3-21.5-18.8-36.5-18.8s-28.3,7.4-36.5,18.8 c-5.3,7.4-8.5,16.5-8.5,26.3C68,425.8,88.2,446,113,446z"></path>
+          <polygon
+            points="211.4,345.9 211.4,308.1 211.4,302.5 205.8,302.5 168,302.6 168.2,346 "></polygon>
+          <path
+            d="M329,145h-432c-22.1,0-40,17.9-40,40v432c0,22.1,17.9,40,40,40h432c22.1,0,40-17.9,40-40V185C369,162.9,351.1,145,329,145z M241,374.7v104.8c0,27.3-22.2,49.5-49.5,49.5h-157C7.2,529-15,506.8-15,479.5V374.7v-52.3c0-27.3,22.2-49.5,49.5-49.5h157 c27.3,0,49.5,22.2,49.5,49.5V374.7z"></path>
+          <path
+            d="M183,401c0,38.6-31.4,70-70,70c-38.6,0-70-31.4-70-70c0-9.3,1.9-18.2,5.2-26.3H10v104.8C10,493,21,504,34.5,504h157 c13.5,0,24.5-11,24.5-24.5V374.7h-38.2C181.2,382.8,183,391.7,183,401z"></path>
+        </g>
+      </symbol>
+
+      <symbol id="icon-youtube" viewBox="0 -3 20 20">
+        <g
+          id="Dribbble-Light-Preview-yt"
+          transform="translate(-300.000000, -7442.000000)"
+          fill="#504D53">
+          <g id="icons-youtube" transform="translate(56.000000, 160.000000)">
+            <path
+              d="M251.988432,7291.58588 L251.988432,7285.97425 C253.980638,7286.91168 255.523602,7287.8172 257.348463,7288.79353 C255.843351,7289.62824 253.980638,7290.56468 251.988432,7291.58588 M263.090998,7283.18289 C262.747343,7282.73013 262.161634,7282.37809 261.538073,7282.26141 C259.705243,7281.91336 248.270974,7281.91237 246.439141,7282.26141 C245.939097,7282.35515 245.493839,7282.58153 245.111335,7282.93357 C243.49964,7284.42947 244.004664,7292.45151 244.393145,7293.75096 C244.556505,7294.31342 244.767679,7294.71931 245.033639,7294.98558 C245.376298,7295.33761 245.845463,7295.57995 246.384355,7295.68865 C247.893451,7296.0008 255.668037,7296.17532 261.506198,7295.73552 C262.044094,7295.64178 262.520231,7295.39147 262.895762,7295.02447 C264.385932,7293.53455 264.28433,7285.06174 263.090998,7283.18289"
+              id="youtube"></path>
+          </g>
+        </g>
+      </symbol>
+      <symbol id="icon-twitter" viewBox="0 -2 20 20">
+        <g
+          id="Dribbble-Light-Preview-tw"
+          transform="translate(-60.000000, -7521.000000)"
+          fill="#504D53">
+          <g id="icons-twitter" transform="translate(56.000000, 160.000000)">
+            <path
+              d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705"
+              id="twitter"></path>
+          </g>
+        </g>
+      </symbol>
+      <symbol id="icon-linkedin" fill="#504D53" viewBox="0 0 32 32">
+        <g id="SVGRepo_iconCarrier">
+          <title>linkedin</title>
+          <path
+            d="M28.778 1.004h-25.56c-0.008-0-0.017-0-0.027-0-1.199 0-2.172 0.964-2.186 2.159v25.672c0.014 1.196 0.987 2.161 2.186 2.161 0.010 0 0.019-0 0.029-0h25.555c0.008 0 0.018 0 0.028 0 1.2 0 2.175-0.963 2.194-2.159l0-0.002v-25.67c-0.019-1.197-0.994-2.161-2.195-2.161-0.010 0-0.019 0-0.029 0h0.001zM9.9 26.562h-4.454v-14.311h4.454zM7.674 10.293c-1.425 0-2.579-1.155-2.579-2.579s1.155-2.579 2.579-2.579c1.424 0 2.579 1.154 2.579 2.578v0c0 0.001 0 0.002 0 0.004 0 1.423-1.154 2.577-2.577 2.577-0.001 0-0.002 0-0.003 0h0zM26.556 26.562h-4.441v-6.959c0-1.66-0.034-3.795-2.314-3.795-2.316 0-2.669 1.806-2.669 3.673v7.082h-4.441v-14.311h4.266v1.951h0.058c0.828-1.395 2.326-2.315 4.039-2.315 0.061 0 0.121 0.001 0.181 0.003l-0.009-0c4.5 0 5.332 2.962 5.332 6.817v7.855z"></path>
+        </g>
+      </symbol>
+    </svg>
+    <div id="background-text">Food Vegan Restaurant</div>
+    <div class="container-xxl my-sm-5">
+      <header class="header p-3 p-sm-5 pt-3">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <h1 class="navbar-brand text-uppercase">Soo good</h1>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-center"
+              id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item mx-2 mx-xl-3">
+                  <a class="nav-link" href="#ingredients">Ingredients</a>
+                </li>
+                <li class="nav-item mx-2 mx-xl-3">
+                  <a class="nav-link" href="#order">Order</a>
+                </li>
+                <li class="nav-item mx-2 mx-xl-3">
+                  <a class="nav-link" href="#sauce">Sauce</a>
+                </li>
+                <li class="nav-item mx-2 mx-xl-3">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="container-fluid">
+          <div
+            class="header__row row flex-column flex-md-row mt-3 mt-md-5 pt-3">
+            <div class="col">
+              <span class="heading__desc">Plant Based Patty</span>
+              <h2 class="heading__top">
+                <strong>100%</strong>
+                <strong>vegan</strong>
+                <strong>burgers</strong>
+              </h2>
+              <button
+                type="button"
+                class="btn btn-success header__btn my-3 my-md-4"
+                data-bs-toggle="modal"
+                data-bs-target="#visitModal">
+                Visit now
+              </button>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="visitModal"
+                tabindex="-1"
+                aria-labelledby="visitModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="visitModalLabel">
+                        Visit now
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Delicious Vegan Burger - A Plant-Based Delight That's
+                      Bursting with Flavor!
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Continue
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col my-4 mb-sm-0 mt-sm-4 mt-md-0 burger">
+              <span class="burger__desc">New</span>
+              <img
+                src="img/burger.png"
+                class="img-fluid"
+                width="480"
+                height="372"
+                alt="Burger" />
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="marquee py-3">
+          <div class="marquee__content">
+            <ul class="marquee__list">
+              <li class="marquee__item">Kind meat</li>
+              <li class="marquee__item">Kind meat</li>
+              <li class="marquee__item">Kind meat</li>
+              <li class="marquee__item">Kind meat</li>
+              <li class="marquee__item">Kind meat</li>
+              <li class="marquee__item">Kind meat</li>
+              <li class="marquee__item">Kind meat</li>
+            </ul>
+          </div>
+        </section>
+        <section class="soo-good p-3 p-sm-5">
+          <div
+            class="row flex-column flex-lg-row align-items-center my-2 g-4 g-lg-5">
+            <div class="col text">
+              <h2 class="heading__h2">Why soo good?</h2>
+              <p class="desc my-4">
+                Indulge in the Irresistible Soo Good Burgers - A Delightful
+                Fusion of Flavors and Unmatched Juiciness. Experience Burger
+                Bliss Today.
+              </p>
+              <button
+                type="button"
+                class="btn btn-success good__btn"
+                data-bs-toggle="modal"
+                data-bs-target="#orderModal">
+                Order now
+              </button>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="orderModal"
+                tabindex="-1"
+                aria-labelledby="orderModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="orderModalLabel">
+                        Order now
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Confirm Your Order Now - Enjoy Our Mouthwatering Vegan
+                      Burger!
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Continue
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col carousel">
+              <div
+                id="carouselExampleFade"
+                class="carousel slide carousel-fade"
+                data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="img/carousel/img1.jpg"
+                      class="d-block w-100"
+                      width="650"
+                      height="450"
+                      alt="Flamestack Burger" />
+                    <p class="carousel__text px-3 px-md-5 py-2">
+                      Fiery blend of juicy meats and spicy toppings.
+                    </p>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/carousel/img2.jpg"
+                      class="d-block w-100"
+                      width="650"
+                      height="450"
+                      alt="Smoky Rebel Burger" />
+                    <p class="carousel__text px-3 px-md-5 py-2">
+                      Bold flavors with a rebellious smoky twist.
+                    </p>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/carousel/img3.jpg"
+                      class="d-block w-100"
+                      width="650"
+                      height="450"
+                      alt="Savage Bite Burger" />
+                    <p class="carousel__text px-3 px-md-5 py-2">
+                      Unleash your carnivorous instincts with this hearty
+                      delight.
+                    </p>
+                  </div>
+                </div>
+                <div class="wrapper-button">
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="ingredients" class="ingredients p-3 p-sm-5">
+          <h2 class="heading__h2 mt-4">Ingredients</h2>
+          <div class="row flex-column flex-lg-row align-items-center my-1 g-5">
+            <div class="col">
+              <img
+                src="img/ingredients.jpg"
+                width="600"
+                height="600"
+                class="img-fluid"
+                alt="Ingredients" />
+            </div>
+            <div class="col">
+              <h3 class="heading__h3">
+                <strong>For you,</strong>
+                <strong>The Planet and</strong>
+                <strong>Your taste buds</strong>
+              </h3>
+              <p class="desc my-4">
+                Soo Good Is For You, The Planet And Your Taste Buds. Soo Good Is
+                For You, The Planet And Your Taste Buds.
+              </p>
+              <a href="#" class="btn btn-success ingredients__btn">
+                View ingredients
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="order">
+          <div class="order__wrapper mx-3 mx-sm-5">
+            <h2 id="order" class="heading__h2 mb-5">
+              <strong>Order</strong> <strong>order</strong>!
+            </h2>
+            <div class="container pb-5">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="swiper__item">
+                      <img
+                        src="img/order/img1.jpg"
+                        width="350"
+                        height="300"
+                        class="img-fluid"
+                        alt="Soo Good Veggie Medley" />
+                      <div class="content p-4">
+                        <h4 class="heading__h4">
+                          <strong>Soo Good</strong>
+                          <strong>Veggie Medley</strong>
+                        </h4>
+                        <div class="wrapper__count my-3">
+                          <div class="circle remove">-</div>
+                          <div class="count">1</div>
+                          <div class="circle add">+</div>
+                        </div>
+                        <button
+                          type="button"
+                          class="btn btn-success order__btn">
+                          Add to cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper__item">
+                      <img
+                        src="img/order/img2.jpg"
+                        width="350"
+                        height="300"
+                        class="img-fluid"
+                        alt="Soo Good Plant Fusion" />
+                      <div class="content p-4">
+                        <h4 class="heading__h4">
+                          <strong>Soo Good</strong>
+                          <strong>Plant Fusion</strong>
+                        </h4>
+                        <div class="wrapper__count my-3">
+                          <div class="circle remove">-</div>
+                          <div class="count">1</div>
+                          <div class="circle add">+</div>
+                        </div>
+                        <button
+                          type="button"
+                          class="btn btn-success order__btn">
+                          Add to cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide">
+                      <div class="swiper__item">
+                        <img
+                          src="img/order/img3.jpg"
+                          width="350"
+                          height="300"
+                          class="img-fluid"
+                          alt="Soo Good Green Bliss" />
+                        <div class="content p-4">
+                          <h4 class="heading__h4">
+                            <strong>Soo Good</strong>
+                            <strong>Green Bliss</strong>
+                          </h4>
+                          <div class="wrapper__count my-3">
+                            <div class="circle remove">-</div>
+                            <div class="count">1</div>
+                            <div class="circle add">+</div>
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-success order__btn">
+                            Add to cart
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide">
+                      <div class="swiper__item">
+                        <img
+                          src="img/order/img4.jpg"
+                          width="350"
+                          height="300"
+                          class="img-fluid"
+                          alt="Soo Good Garden Magic" />
+                        <div class="content p-4">
+                          <h4 class="heading__h4">
+                            <strong>Soo Good</strong>
+                            <strong>Garden Magic</strong>
+                          </h4>
+                          <div class="wrapper__count my-3">
+                            <div class="circle remove">-</div>
+                            <div class="count">1</div>
+                            <div class="circle add">+</div>
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-success order__btn">
+                            Add to cart
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide">
+                      <div class="swiper__item">
+                        <img
+                          src="img/order/img5.jpg"
+                          width="350"
+                          height="300"
+                          class="img-fluid"
+                          alt="Soo Good Veggie Delight" />
+                        <div class="content p-4">
+                          <h4 class="heading__h4">
+                            <strong>Soo Good</strong>
+                            <strong>Veggie Delight</strong>
+                          </h4>
+                          <div class="wrapper__count my-3">
+                            <div class="circle remove">-</div>
+                            <div class="count">1</div>
+                            <div class="circle add">+</div>
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-success order__btn">
+                            Add to cart
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--test-->
+                  <div class="swiper-slide">
+                    <div class="swiper-slide">
+                      <div class="swiper__item">
+                        <img
+                          src="img/order/img6.jpg"
+                          width="350"
+                          height="300"
+                          class="img-fluid"
+                          alt="Soo Good Zen Burger" />
+                        <div class="content p-4">
+                          <h4 class="heading__h4">
+                            <strong>Soo Good</strong>
+                            <strong>Zen Burger</strong>
+                          </h4>
+                          <div class="wrapper__count my-3">
+                            <div class="circle remove">-</div>
+                            <div class="count">1</div>
+                            <div class="circle add">+</div>
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-success order__btn">
+                            Add to cart
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide">
+                      <div class="swiper__item">
+                        <img
+                          src="img/order/img7.jpg"
+                          width="350"
+                          height="300"
+                          class="img-fluid"
+                          alt="Soo Good XXL Burgeros" />
+                        <div class="content p-4">
+                          <h4 class="heading__h4">
+                            <strong>Soo Good</strong>
+                            <strong>XXL Burgeros</strong>
+                          </h4>
+                          <div class="wrapper__count my-3">
+                            <div class="circle remove">-</div>
+                            <div class="count">1</div>
+                            <div class="circle add">+</div>
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-success order__btn">
+                            Add to cart
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide">
+                      <div class="swiper__item">
+                        <img
+                          src="img/order/img8.jpg"
+                          width="350"
+                          height="300"
+                          class="img-fluid"
+                          alt="Soo Good Mini Burgeros" />
+                        <div class="content p-4">
+                          <h4 class="heading__h4">
+                            <strong>Soo Good</strong>
+                            <strong>Mini Burgeros</strong>
+                          </h4>
+                          <div class="wrapper__count my-3">
+                            <div class="circle remove">-</div>
+                            <div class="count">1</div>
+                            <div class="circle add">+</div>
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-success order__btn">
+                            Add to cart
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="everyday pb-3 pb-lg-5">
+          <div class="wrapper pb-3 pb-md-5">
+            <p class="change-text">
+              <span class="change-text__left">Everyday is a go</span>
+              <span id="dynamic-word" class="change-text__right"></span>
+            </p>
+          </div>
+        </section>
+        <section id="sauce" class="sauce px-3 py-5 p-sm-5">
+          <h2 class="heading__h2 my-2 my-lg-5 pb-3 pb-md-5">
+            <strong>Our</strong>
+            <strong>secret</strong>
+            <strong>sauce</strong>
+          </h2>
+          <div class="wrapper__sauce mt-3 mt-md-5">
+            <div class="row flex-column flex-lg-row align-items-center">
+              <div class="col col__sauce px-5 px-lg-0 mx-lg-5 my-4">
+                <h3 class="heading__h3">Our 36 special herbs & spices</h3>
+                <p class="desc my-4">
+                  Indulge in the tantalizing blend of our 36 carefully selected
+                  herbs and spices, adding a burst of extraordinary flavor to
+                  every bite.
+                </p>
+                <div class="gradient">
+                  <ul class="sauce__list">
+                    <li class="sauce__list--item">
+                      <svg class="icon icon-meat" width="75" height="75">
+                        <use xlink:href="#icon-meat"></use>
+                      </svg>
+                      <p class="desc">Tastes like meat</p>
+                    </li>
+                    <li class="sauce__list--item">
+                      <svg class="icon icon-protein" width="75" height="75">
+                        <use xlink:href="#icon-protein"></use>
+                      </svg>
+                      <p class="desc">High in protein</p>
+                    </li>
+                    <li class="sauce__list--item">
+                      <svg class="icon icon-vitamins" width="75" height="75">
+                        <use xlink:href="#icon-vitamins"></use>
+                      </svg>
+                      <p class="desc">Vitamins & minerals</p>
+                    </li>
+                    <li class="sauce__list--item">
+                      <svg class="icon icon-plant" width="75" height="75">
+                        <use xlink:href="#icon-plant"></use>
+                      </svg>
+                      <p class="desc">Plant based</p>
+                    </li>
+                    <li class="sauce__list--item">
+                      <svg class="icon icon-flower" width="75" height="75">
+                        <use xlink:href="#icon-flower"></use>
+                      </svg>
+                      <p class="desc">Chewy & authentic</p>
+                    </li>
+                    <li class="sauce__list--item">
+                      <svg class="icon icon-bottle" width="75" height="75">
+                        <use xlink:href="#icon-bottle"></use>
+                      </svg>
+                      <p class="desc">Delicious sauce</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col d-none d-lg-block">
+                <img
+                  src="img/sauce.jpg"
+                  class="img-fluid"
+                  width="700"
+                  height="732"
+                  alt="Secret sauce" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="insta p-3 p-sm-5">
+          <h2 class="heading__h2">
+            <strong>Hello</strong>
+            <strong>Insta fam</strong>
+          </h2>
+          <div class="insta__gallery my-5">
+            <ul
+              class="insta__list d-flex flex-column flex-lg-row justify-content-between align-items-center p-3 p-md-5 py-3">
+              <li class="insta__item">
+                <a href="https://www.instagram.com/" target="_blank">
+                  <img
+                    src="img/gallery/img1.jpg"
+                    class="img-fluid"
+                    width="400"
+                    height="400"
+                    alt="Gallery - Insta burger" />
+                </a>
+              </li>
+              <li class="insta__item">
+                <a href="https://www.instagram.com/" target="_blank">
+                  <img
+                    src="img/gallery/img2.jpg"
+                    class="img-fluid"
+                    width="400"
+                    height="400"
+                    alt="Gallery - Insta burger" />
+                </a>
+              </li>
+              <li class="insta__item">
+                <a href="https://www.instagram.com/" target="_blank">
+                  <img
+                    src="img/gallery/img3.jpg"
+                    class="img-fluid"
+                    width="400"
+                    height="400"
+                    alt="Gallery - Insta burger" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="delicious p-3 p-sm-5">
+          <h2 class="heading__h2 my-5">
+            How many people recommend our burgers?
+          </h2>
+          <div class="progress mb-5">
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated"
+              role="progressbar"
+              aria-label="Example with label"
+              style="width: 99%"
+              aria-valuenow="99"
+              aria-valuemin="0"
+              aria-valuemax="100">
+              999/1000
+            </div>
+          </div>
+        </section>
+        <section id="contact" class="maps">
+          <div class="address-container">
+            <address>
+              <div>23, The Green Patty</div>
+              <div>Vegantown 45733</div>
+              <a href="tel:+123456789">+1 234 567 89</a>
+              <a href="mailto:hello@soogood.com">hello@soogood.com</a>
+              <a
+                href="https://goo.gl/maps/WqnS7bS7ykGXa2AL8"
+                target="_blank"
+                class="btn btn-success maps__btn mt-4">
+                View in map
+              </a>
+            </address>
+          </div>
+        </section>
+        <section class="about p-3 py-5 p-sm-5">
+          <div
+            class="row d-flex flex-column flex-xl-row my-0 my-lg-4 g-5 g-xl-0">
+            <div class="col d-flex flex-column flex-sm-row about__col">
+              <div class="col about__col--a">
+                <h2 class="heading__h2 mb-4">About</h2>
+                <ul class="about__list">
+                  <li class="about__list--item">
+                    <a href="#">Company</a>
+                  </li>
+                  <li class="about__list--item">
+                    <a href="#">Team</a>
+                  </li>
+                  <li class="about__list--item">
+                    <a href="#">Why us?</a>
+                  </li>
+                  <li class="about__list--item">
+                    <a href="#">Store Locator</a>
+                  </li>
+                  <li class="about__list--item">
+                    <a href="#">Ingredients</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col about__col--b">
+                <h2 class="heading__h2 mb-4">Shop</h2>
+                <ul class="about__list">
+                  <li class="about__list--item">
+                    <a href="#">The Veggie Grind</a>
+                  </li>
+                  <li class="about__list--item">
+                    <a href="#">Nature's Burger Hub</a>
+                  </li>
+                  <li class="about__list--item">
+                    <a href="#">Veganicious Eats</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col subs__col">
+              <h2 class="heading__h2 heading__h2--subs mb-4">Subscribe</h2>
+              <form class="form" method="post">
+                <label for="email" class="hide">E-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="mail@gmail.com"
+                  required />
+                <button type="submit" class="btn btn-success form__btn">
+                  Yes, I'M in!
+                </button>
+              </form>
+              <ul
+                class="social-list d-flex justify-content-end align-items-center mt-4">
+                <li class="social__item">
+                  <a href="https://www.linkedin.com/" target="_blank">
+                    <svg class="icon icon-linkedin" width="36" height="36">
+                      <use xlink:href="#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="https://twitter.com/" target="_blank">
+                    <svg class="icon icon-twitter" width="36" height="36">
+                      <use xlink:href="#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="https://www.youtube.com/" target="_blank">
+                    <svg class="icon icon-youtube" width="36" height="36">
+                      <use xlink:href="#icon-youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="https://www.instagram.com/" target="_blank">
+                    <svg class="icon icon-instagram" width="30" height="30">
+                      <use xlink:href="#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="https://www.facebook.com/" target="_blank">
+                    <svg class="icon icon-facebook" width="36" height="36">
+                      <use xlink:href="#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="foot p-3 p-sm-5">
+        <div
+          class="row d-flex flex-column flex-lg-row justify-content-center align-items-center">
+          <div class="col col__good text-center text-lg-start">Soo Good</div>
+          <div
+            class="col d-lg-flex justify-content-lg-center align-items-lg-center my-4 text-center">
+            <a href="#" class="scroll-up-link">
+              <span>Go to top</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M12 8l-6 6 6-6zm0 0l6 6-6-6z" />
+              </svg>
+            </a>
+          </div>
+          <div class="col d-lg-flex justify-content-lg-end gap-2 text-center">
+            Copyright <span id="year"> </span> All rights reserved
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
